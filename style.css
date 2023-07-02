@@ -1,0 +1,505 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img{
+    height: 80px;
+}
+
+.scooterimage{
+    height: 60px;
+}
+
+.question-mark-icon{
+    height: 40px;
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.527),rgba(0, 0, 0, 0.7)),url(./assets/2248.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.welldone-div{
+  
+    display: flex;
+    justify-content: center;
+    top: 40px;
+    z-index: 300;
+    font-size: 3rem;
+    font-family: 'Fredericka the Great', cursive;
+    
+    
+    
+    
+}
+
+.welldone-div h1{
+    font-family: 'Londrina Shadow', cursive;
+    color: white;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+    
+  
+
+}
+
+.wrapper{
+    position: absolute;
+    top: 50px;
+    margin-top: 140px;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.cards, .card .view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.cards{
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card .back-view img{
+    max-width: 45px;
+    
+}
+
+.cards .card{
+    cursor: pointer;
+    position:  relative;
+    perspective: 1000px;
+    transform-style: preserve-3d ;
+    height: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 10px);
+    list-style: none;
+}
+
+.card.shake{
+    animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+   0%, 100%{
+    transform: translateX(0);
+   } 
+
+   20%{
+    transform: translateX(-13px);
+   } 
+
+   40%{
+    transform: translateX(13px);
+   } 
+
+   60%{
+    transform: translateX(-8px);
+   } 
+
+   80%{
+    transform: translateX(8px);
+   } 
+}
+
+.cards .card .view{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    position: absolute;
+    border-radius: 7px;
+    background:#fff;
+    pointer-events: none;
+    backface-visibility: hidden;
+    transition: transform 0.25s linear;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+
+
+.card .back-view{
+    transform: rotateY(-180deg);
+    
+    
+}
+
+.card.flip .back-view{
+    transform: rotateY(0);
+}
+
+.card.flip .front-view{
+    transform: rotateY(180deg);
+}
+
+.welldone-div{
+    position: relative;
+   
+  
+}
+
+@media (min-width: 450px) and (max-width: 750px){
+
+    welldone-div{
+  
+        display: flex;
+        justify-content: center;
+        top: 40px;
+        z-index: 300;
+        width: max-content;
+        font-family: 'Fredericka the Great', cursive;
+}
+
+.welldone-div h1{
+    font-family: 'Londrina Shadow', cursive;
+    color: white;
+    font-size: 3.5rem;
+}
+}
+
+
+
+@media (min-width: 370px) and (max-width: 450px){
+
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    img{
+        height: 40px;
+    }
+    
+    .scooterimage{
+        height: 30px;
+    }
+    
+    .question-mark-icon{
+        height: 40px;
+    }
+    
+    body{
+        background-image:linear-gradient(rgba(0,0,0,0.527),rgba(0, 0, 0, 0.7)),url(./assets/2248.jpg);
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
+   
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+        
+      
+    
+    }
+    
+    .wrapper{
+        position: absolute;
+        top: 50px;
+        margin-top: 140px;
+        height: 350px;
+        width: 350px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 25px;
+    }
+    
+    .cards, .card .view{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+    }
+    
+    .cards{
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card .back-view img{
+        max-width: 45px;
+        
+    }
+    
+    .cards .card{
+        cursor: pointer;
+        position:  relative;
+        perspective: 1000px;
+        transform-style: preserve-3d ;
+        height: calc(100% / 4 - 10px);
+        width: calc(100% / 4 - 10px);
+        list-style: none;
+    }
+    
+    .card.shake{
+        animation: shake 0.35s ease-in-out;
+    }
+    
+    @keyframes shake {
+       0%, 100%{
+        transform: translateX(0);
+       } 
+    
+       20%{
+        transform: translateX(-13px);
+       } 
+    
+       40%{
+        transform: translateX(13px);
+       } 
+    
+       60%{
+        transform: translateX(-8px);
+       } 
+    
+       80%{
+        transform: translateX(8px);
+       } 
+    }
+    
+    .cards .card .view{
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        position: absolute;
+        border-radius: 7px;
+        background:#fff;
+        pointer-events: none;
+        backface-visibility: hidden;
+        transition: transform 0.25s linear;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+    
+    
+    
+    .card .back-view{
+        transform: rotateY(-180deg);
+        
+        
+    }
+    
+    .card.flip .back-view{
+        transform: rotateY(0);
+    }
+    
+    .card.flip .front-view{
+        transform: rotateY(180deg);
+    }
+    
+    .welldone-div{
+        position: relative;
+       
+      
+    }
+
+    welldone-div{
+  
+        display: flex;
+        justify-content: center;
+        
+        z-index: 300;
+        width: max-content;
+        font-family: 'Fredericka the Great', cursive;
+}
+
+.welldone-div h1{
+    font-family: 'Londrina Shadow', cursive;
+    color: white;
+    font-size: 2.8rem;
+    margin-top: 30px;
+}
+}
+
+
+
+@media (min-width: 250px) and (max-width: 370px){
+
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    img{
+        height: 40px;
+    }
+    
+    .scooterimage{
+        height: 30px;
+    }
+    
+    .question-mark-icon{
+        height: 30px;
+    }
+    
+    body{
+        background-image:linear-gradient(rgba(0,0,0,0.527),rgba(0, 0, 0, 0.7)),url(./assets/2248.jpg);
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
+   
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+        
+      
+    
+    }
+    
+    .wrapper{
+        position: absolute;
+        top: 50px;
+        margin-top: 140px;
+        height: 270px;
+        width: 270px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 25px;
+    }
+    
+    .cards, .card .view{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+    }
+    
+    .cards{
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card .back-view img{
+        max-width: 45px;
+        
+    }
+    
+    .cards .card{
+        cursor: pointer;
+        position:  relative;
+        perspective: 1000px;
+        transform-style: preserve-3d ;
+        height: calc(100% / 4 - 10px);
+        width: calc(100% / 4 - 10px);
+        list-style: none;
+    }
+    
+    .card.shake{
+        animation: shake 0.35s ease-in-out;
+    }
+    
+    @keyframes shake {
+       0%, 100%{
+        transform: translateX(0);
+       } 
+    
+       20%{
+        transform: translateX(-13px);
+       } 
+    
+       40%{
+        transform: translateX(13px);
+       } 
+    
+       60%{
+        transform: translateX(-8px);
+       } 
+    
+       80%{
+        transform: translateX(8px);
+       } 
+    }
+    
+    .cards .card .view{
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        position: absolute;
+        border-radius: 7px;
+        background:#fff;
+        pointer-events: none;
+        backface-visibility: hidden;
+        transition: transform 0.25s linear;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+    
+    
+    
+    .card .back-view{
+        transform: rotateY(-180deg);
+        
+        
+    }
+    
+    .card.flip .back-view{
+        transform: rotateY(0);
+    }
+    
+    .card.flip .front-view{
+        transform: rotateY(180deg);
+    }
+    
+    .welldone-div{
+        position: relative;
+       
+      
+    }
+
+    welldone-div{
+  
+        display: flex;
+        justify-content: center;
+        
+        z-index: 300;
+        width: max-content;
+        font-family: 'Fredericka the Great', cursive;
+}
+
+.welldone-div h1{
+    font-family: 'Londrina Shadow', cursive;
+    color: white;
+    font-size: 2.2rem;
+    margin-top: 30px;
+}
+}
+
